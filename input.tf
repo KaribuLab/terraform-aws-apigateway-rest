@@ -155,6 +155,12 @@ variable "domain_name" {
   default     = ""
 }
 
+variable "base_path" {
+  description = "Path segment that must be prepended to the path when accessing the API via this mapping. If omitted, the API is exposed at the root of the given domain."
+  type        = string
+  default     = ""
+}
+
 variable "create_domain_name" {
   description = "Domain Name"
   type        = string
